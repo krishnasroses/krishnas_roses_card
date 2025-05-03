@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna´s Roses | Tienda</title>
+    <link rel="shortcut icon" href="../assets/img/logo.webp" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/img/bootstrap_icons/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/store.css">
+</head>
+<body>
+
+    <main>
+        <!-- Menu -->
+        <button class="btn-menu" onclick="toggleNav()">
+            <i class="bi bi-list"></i>
+        </button>
+        <!-- Navbar Vertical -->
+        <aside class="nav-ver" id="navMenu">
+            <div class="nav-ver-logo"></div>
+            <ul class="nav-ver-links">
+                <li><a href="home.html">Inicio</a></li>
+                <li><a href="store.html">Tienda</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+            <ul class="nav-ver-social">
+                <li><a href=""><i class="bi bi-instagram"></i></a></li>
+                <li><a href=""><i class="bi bi-pinterest"></i></a></li>
+                <li><a href=""><i class="bi bi-telegram"></i></a></li>
+                <li><a href=""><i class="bi bi-whatsapp"></i></a></li>
+            </ul>
+        </aside>
+
+        <section class="products">
+            <!-- Tarjeta de Producto 1 -->
+            <div class="product">
+                <div class="product-img"></div>
+                <div class="product-info">
+                    <h2>Vestido</h2>
+                    <p class="product-description">Con nudo delantero.</p>
+                    <div class="product-info-details">
+                        <p class="product-color">Color: Rojo</p>
+                        <p class="product-size">Tamaño: Pequeño</p>
+                    </div>
+                    <div class="product-info-price">$16</div>
+                </div>
+                <button class="product-pay" onclick="redirectToWhatsApp('Vestido','0001','16')">Comprar</button>
+            </div>
+            <!-- Tarjeta de Producto 2 -->
+            <div class="product">
+                <div class="product-img"></div>
+                <div class="product-info">
+                    <h2>Vestido</h2>
+                    <p class="product-description">Vestido elegante, hombros al descubierto con patrón de rosas.</p>
+                    <div class="product-info-details">
+                        <p class="product-color">Color: Blanco/Negro</p>
+                        <p class="product-size">Tamaño: Mediano</p>
+                    </div>
+                    <div class="product-info-price">$15</div>
+                </div>
+                <button class="product-pay" onclick="redirectToWhatsApp('Vestido','0003','15')">Comprar</button>
+            </div>
+            <!-- Tarjeta de Producto 3 -->
+            <div class="product">
+                <div class="product-img"></div>
+                <div class="product-info">
+                    <h2>Vestido</h2>
+                    <p class="product-description">Vestido de playa con escote halter.</p>
+                    <div class="product-info-details">
+                        <p class="product-color">Color: Multicolor</p>
+                        <p class="product-size">Tamaño: Mediano</p>
+                    </div>
+                    <div class="product-info-price">$13</div>
+                </div>
+                <button class="product-pay" onclick="redirectToWhatsApp('Vestido','0004','13')">Comprar</button>
+            </div>
+            <!-- Tarjeta de Producto 4 -->
+            <div class="product">
+                <div class="product-img"></div>
+                <div class="product-info">
+                    <h2>Pullover</h2>
+                    <p class="product-description">Pullover NFL.</p>
+                    <div class="product-info-details">
+                        <p class="product-color">Color: Rojo</p>
+                        <p class="product-size">Tamaño: Grande</p>
+                    </div>
+                    <div class="product-info-price">$20</div>
+                </div>
+                <button class="product-pay" onclick="redirectToWhatsApp('Pullover','0006','20')">Comprar</button>
+            </div>
+            <!-- Tarjeta de Producto -->
+            <div class="product">
+                <div class="product-img"></div>
+                <div class="product-info">
+                    <h2>Falda</h2>
+                    <p class="product-description">Falda estampada.</p>
+                    <div class="product-info-details">
+                        <p class="product-color">Color: Blanco/Negro</p>
+                        <p class="product-size">Tamaño: Mediano</p>
+                    </div>
+                    <div class="product-info-price">$7</div>
+                </div>
+                <button class="product-pay" onclick="redirectToWhatsApp('Falda','0007','7')">Comprar</button>
+            </div>
+            <!-- Tarjeta de Producto -->
+            <div class="product">
+                <div class="product-img"></div>
+                <div class="product-info">
+                    <h2>Conjunto</h2>
+                    <p class="product-description">Conjunto de 2 piezas, chaqueta con botones y vestido ajustado.</p>
+                    <div class="product-info-details">
+                        <p class="product-color">Color: Salmón</p>
+                        <p class="product-size">Tamaño: Mediano</p>
+                    </div>
+                    <div class="product-info-price">$13</div>
+                </div>
+                <button class="product-pay" onclick="redirectToWhatsApp('Conjunto','00011','13')">Comprar</button>
+            </div>
+            <!-- Tarjeta de Producto -->
+            <div class="product">
+                <div class="product-img"></div>
+                <div class="product-info">
+                    <h2>Pullover</h2>
+                    <p class="product-description">Pulover de mangas cortas con estampado de panel de instrumento.</p>
+                    <div class="product-info-details">
+                        <p class="product-color">Color: Grís Oscuro</p>
+                        <p class="product-size">Tamaño: Mediano</p>
+                    </div>
+                    <div class="product-info-price">$10</div>
+                </div>
+                <button class="product-pay" onclick="redirectToWhatsApp('Pullover','0012','10')">Comprar</button>
+            </div>
+            <!-- Tarjeta de Producto -->
+            <div class="product">
+                <div class="product-img"></div>
+                <div class="product-info">
+                    <h2>Vestido</h2>
+                    <p class="product-description">Vestido elegante ajustado, corto de cuello, y mangas acampanada.</p>
+                    <div class="product-info-details">
+                        <p class="product-color">Color: Rojo</p>
+                        <p class="product-size">Tamaño: Mediano</p>
+                    </div>
+                    <div class="product-info-price">$15</div>
+                </div>
+                <button class="product-pay" onclick="redirectToWhatsApp('Vestido','0014','15')">Comprar</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <ul class="footer-social">
+            <li><a href="https://www.instagram.com/krishna.roses/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="https://es.pinterest.com/krishnasroses/" target="_blank"><i class="bi bi-pinterest"></i></a></li>
+            <li><a href="https://t.me/krishnas_roses" target="_blank"><i class="bi bi-telegram"></i></a></li>
+            <li><a href="https://whatsapp.com/channel/0029Vb5YjCs545uryfIikL0r" target="_blank"><i class="bi bi-whatsapp"></i></a></li>
+        </ul>
+    </footer>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
