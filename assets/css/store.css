@@ -70,6 +70,14 @@ main {
     background-image: url('../img/products/0014.png');
     background-size: contain;
 }
+.product:nth-child(9) .product-img {
+    background-image: url('../img/products/0017.png');
+    background-size: contain;
+}
+.product:nth-child(10) .product-img {
+    background-image: url('../img/products/0018.png');
+    background-size: contain;
+}
 .product-info {
     width: 100%;
     height: 50%;
