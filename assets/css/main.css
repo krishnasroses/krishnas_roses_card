@@ -35,6 +35,9 @@ button {
     border: none;
     background: none;
 }
+aside {
+    z-index: 100;
+}
 .btn-menu {
     position: fixed;
     top: 0;
